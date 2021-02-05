@@ -1,0 +1,79 @@
+%s/"lldb::addr_t"/int/g
+%s/"int\(8\|16\|32\|64\)_t"/int/g
+%s/"uint\(8\|16\|32\|64\)_t"/int/g
+%s/"int\(8\|16\|32\|64\)_t const"/int/g
+%s/"uint\(8\|16\|32\|64\)_t const"/int/g
+%s/"lldb::SB\([a-zA-Z]*\)"/'SB\1'/g
+%s/ -> "void":/:/g
+%s/"char const \*"/str/g
+%s/"char \*"/str/g
+%s/"bool"/bool/g
+%s/"size_t"/int/g
+%s/"lldb::\([a-zA-Z]*\)"/'\1'/g
+%s/"lldb::\([a-zA-Z]*\) const"/'\1'/g
+%s/"lldb::\([a-zA-Z]*\) &"/'\1'/g
+%s/"std::string"/str/g
+%s/"lldb::pid_t"/int/g
+%s/"lldb::tid_t"/int/g
+%s/"lldb::break_id_t"/int/g
+%s/"lldb::watch_id_t"/int/g
+%s/"lldb::user_id_t"/int/g
+%s/"lldb::queue_id_t"/int/g
+%s/"lldb::offset_t"/int/g
+
+%s/'FileSP'/'SBFile'/g
+%s/'QueueItemSP'/'SBQueueItem'/g
+
+%s/"double"/float/g
+%s/"float"/float/g
+%s/"long double"/float/g
+
+
+remove lldb prefixes
+
+
+BasicType
+BreakpointEventType
+ByteOrder
+QueueKind
+QueueItemKind
+SectionType
+StopReason
+StructuredDataType
+SymbolType
+MatchType
+InstrumentationRuntimeType
+CommandArgumentType
+ConnectionStatus
+DescriptionLevel
+DynamicValueType
+ErrorType
+Format
+LanguageType
+MemberFunctionKind
+PathType
+ReturnStatus
+ScriptLanguage
+StructuredDataType
+TemplateArgumentKind
+TraceType
+TypeClass
+TypeSummaryCapping
+ValueType
+WatchpointEventType
+
+
+void *
+void const *
+uint8_t *
+uint32_t *
+uint64_t *
+double *
+char const **
+int&
+bool&
+bool&
+
+
+LogOutputCallback
+
